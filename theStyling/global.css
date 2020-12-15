@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap");
+/*
+    56px - Minimum Font-Size
+    96px - Maximuum Font-Size
+    100vw - Default
+    320px - Minimum Viewport Size
+    1600 - Maximum Viewport Size
+*/
 * {
   padding: 0;
   margin: 0;
@@ -7,10 +15,10 @@
 }
 
 /* Temporary Code */
-h1 {
-  color: black;
+.maintenance-heading {
+  color: #000000;
   text-align: center;
-  font-family: 'Inconsolata', sans-serif;
+  font-family: "Inconsolata", sans-serif;
   font-weight: 200;
   font-size: 96px;
   position: absolute;
@@ -23,5 +31,11 @@ h1 {
 .red {
   font-weight: 900;
   color: red;
+}
+
+@media screen and (min-width: 320px) {
+  .maintenance-heading {
+    font-size: calc(56px + (96 - 56) * ((100vw - 320px) / (1600 - 320)));
+  }
 }
 /*# sourceMappingURL=global.css.map */

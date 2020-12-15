@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap");
+/*
+    56px - Minimum Font-Size
+    96px - Maximuum Font-Size
+    100vw - Default
+    320px - Minimum Viewport Size
+    1600 - Maximum Viewport Size
+*/
 * {
   padding: 0;
   margin: 0;

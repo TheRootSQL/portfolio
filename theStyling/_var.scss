@@ -1,4 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
 $color__loading-background: #000000;
 
 $color__black: #000000;
 $color__white: #FFFFFF;
+$color__red: rgb(255, 0, 0);
+
+$font__primary-font: 'Montserrat', sans-serif;
+$font__secondary-font: 'Inconsolata', sans-serif;
+
+// Temporary Variables
+$temp__large-heading: 96px;
+/*
+    56px - Minimum Font-Size
+    96px - Maximuum Font-Size
+    100vw - Default
+    320px - Minimum Viewport Size
+    1600 - Maximum Viewport Size
+*/
+$temp__large-heading-responsive: calc(56px + (96 - 56) * ((100vw - 320px) / (1600 - 320)));
